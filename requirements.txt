@@ -1,0 +1,2 @@
+# La base común usa únicamente la biblioteca estándar de Python >= 3.10.
+# Cada integrante debe agregar aquí las dependencias reales de su método.
