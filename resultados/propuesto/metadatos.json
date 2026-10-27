@@ -1,0 +1,56 @@
+{
+  "inicio_utc": "2026-10-27T04:58:59.669010+00:00",
+  "fin_utc": "2026-10-27T05:08:04.746893+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "plataforma": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "procesador": "x86_64",
+  "ejecucion": "secuencial_un_proceso",
+  "parametros": {
+    "poblacion": 60,
+    "generaciones": 150,
+    "prob_cruce": 0.9,
+    "prob_mutacion": 0.25,
+    "elite": 2,
+    "torneo": 3,
+    "max_vehiculos": null
+  },
+  "semillas": [
+    0,
+    1,
+    2
+  ],
+  "max_vehiculos": "sin_limite_adicional",
+  "distancias": "auto: CMT real; X floor(d+0.5)",
+  "tiempo": "perf_counter; excluye lectura, matriz, validación, CSV y figuras",
+  "hashes": {
+    "CMT1.vrp": "80ba74909877a3fb9aa4f44b65d4dd9f64061385668f78e7881f7459b5ff19c6",
+    "CMT10.vrp": "9dd1487dc9e3c9b38940f129025eced1a89afb64696d78031e9d866dd8884ba4",
+    "CMT11.vrp": "23b9a9e677f0ba69745d41757369b2f05da6fc780953b0940124139256686dcf",
+    "CMT12.vrp": "1ba1acf39e1c0d77d1667fed7ad88b13028285f8640fd063a1bd07d5b5cab891",
+    "CMT13.vrp": "015e9c09f49f90c44a3f1a122b0a0e8f2a6b5422c7ad7b5811a87bc7e0fd7863",
+    "CMT14.vrp": "43622638653285e5abc5b06b3e474bd5bc8c4cc0766f4df9f079f28a3faa4365",
+    "CMT2.vrp": "61bb889b5bada3b07130344764db983e2644a5e78e14c71298086a938bfc23d8",
+    "CMT3.vrp": "6b38169c8ecbb601e11abf9881399878ef056fb1c33e117f40b6836ed90c58b1",
+    "CMT4.vrp": "31c1eedd63d16494e8493b9f035ab1c0a5389f80c5eec6d13dec3828e8820798",
+    "CMT5.vrp": "d528b1b077eeb3568f22558e357f6fba3134d7978f93ac8ef21ef78a9dbf0903",
+    "CMT6.vrp": "3b9e0eae9e5825111c093d51366aebe591f3fd1ed5d69f0d2f9c0d2e92500779",
+    "CMT7.vrp": "c72d01a14450be6639459eb5f2fdd290e4167c7589cd12189622652735852cef",
+    "CMT8.vrp": "cc208803d227b960a6497ca493f067d2c155b9577bc610996b7bdce5d435b72d",
+    "CMT9.vrp": "b2e8b5dc53ef6ad9f77fc2e9eb31341567ddc717f83d8c9d71029c4a90e9918e",
+    "X-n280-k17.vrp": "d5b39b59491997b9e74299a5bf343719627cc4cde87727ef2e10764924b84f96",
+    "X-n303-k21.vrp": "8b31998ba5500255b3b2b81bacbe1e5467209439ca8efae9ba099e1190724dfe",
+    "X-n308-k13.vrp": "e94414156b38b9281736bf527dc8bba7db33c45b10513034b261b74cf3b060b5",
+    "X-n327-k20.vrp": "fd4550e0511cd159e1a1ea39b61be8db51ffc8e4ba605274a3b8e72e4340cf6a",
+    "X-n336-k84.vrp": "8e957a8e540162b7491f116f8fe0023c73d2d121ce4777f4e930464cf1a8d970",
+    "X-n401-k29.vrp": "11ba49745cc7080cd8d67a6c508ba9447f059709b347f1eb81fcd41fbefc55a0",
+    "X-n411-k19.vrp": "d6e22ac66b59a5fc11e75776535decb5734ea9a0c095ecb7008b5c12bf2109aa",
+    "X-n429-k61.vrp": "d6c7380a277a699f887269ac590c24b0053338bedf6768ad6eed57ee90118eec",
+    "X-n449-k29.vrp": "1f77d49652605084b40a8babdf3c50f5527e2b450f1b113224693ae484f5b71c",
+    "X-n459-k26.vrp": "007f46036f6b52d92fbec99c9771649b6bb2a87c6bb88a56303ba08cc0805208"
+  },
+  "codigo_sha256": {
+    "ejecutar.py": "69e0fb608570574f08f3be861332e1879101ed296f3e7389f4acefec41a30e58",
+    "ga_split.py": "9feb2172c845083f65d6de7ed8e6c2ac49407e79573f890d290afb0cbabb435a",
+    "instancias.py": "0b8920180e522b6b7eaf90eaffbcb858c5f97690d4da8baae253a4563ce321ca"
+  }
+}

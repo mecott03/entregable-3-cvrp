@@ -7,13 +7,14 @@ algoritmo propuesto, algoritmo genético y colonia de hormigas.
 
 - Incluidas las **24 instancias originales**, sin modificaciones.
 - Listos: lector común, validador de rutas, inventario CSV y pruebas.
-- **Todavía no se incluyen ejecuciones ni resultados de los cuatro métodos.**
+- La parte individual del **algoritmo propuesto** usa el GA con Split de etapa 1: código, 72 corridas y sección LaTeX.
+- Para consultar esa parte: [`LEEME_MI_PARTE.md`](reporte/propuesto/LEEME_MI_PARTE.md).
+- Las implementaciones de los demás métodos corresponden a los otros integrantes.
 - En la etapa 1, el anexo llamado «Código del algoritmo» contiene un **genético
   con Split**. La etapa 2 desarrolla ese genético y ACO. Ninguna de las dos
-  identifica un tercer algoritmo distinto. El equipo debe aclarar qué método
-  corresponde al «algoritmo propuesto» antes de implementar esa parte.
-- Alternativa para discutir: ahorros de Clarke–Wright + mejora 2-opt. Es una
-  propuesta nueva, no un método que se haya identificado en las etapas previas.
+  identifica un tercer algoritmo distinto. Se avanzó bajo el supuesto autorizado
+  de usar ese GA como algoritmo propuesto. No debe contarse dos veces como si
+  fueran métodos independientes al integrar la comparación del equipo.
 
 ## Estructura
 
@@ -21,7 +22,7 @@ algoritmo propuesto, algoritmo genético y colonia de hormigas.
 |---|---|
 | `instancias/` | 14 CMT y 10 X en formato `.vrp` |
 | `comun/` | Lectura y validación compartidas |
-| `algoritmos/propuesto/` | Parte de Vanessa, pendiente de aclarar el método |
+| `algoritmos/propuesto/` | Parte de Vanessa: GA con Split de la etapa 1 |
 | `algoritmos/genetico/` | Integrar implementación y estudio de 12 configuraciones |
 | `algoritmos/aco/` | Integrar código y resultados existentes del equipo |
 | `algoritmos/modelo/` | Modelo, parámetros del solver y estados |
@@ -95,9 +96,9 @@ Si el modelo demuestra optimalidad y usa idénticas restricciones y distancias:
 Si solo hay solución factible del solver, la diferencia relativa con ella es
 una comparación con incumbente, no un GAP al óptimo. Si se dispone de cota
 inferior válida, reportar por separado la brecha respecto a esa cota.
-Los números en `COMMENT` de CMT se conservan como comentarios del archivo;
-no se han certificado aquí como óptimos actuales. No generar GAP con ellos
-sin verificar procedencia y convención.
+Los números en `COMMENT` de CMT se conservan como comentarios del archivo.
+La sección individual usa referencias consultadas en CVRPLIB con fuente y fecha,
+y las diferencia del GAP contra el modelo matemático del equipo.
 
 ## Qué debe aportar cada integrante
 
@@ -124,3 +125,14 @@ No subir credenciales, tokens, entornos virtuales ni ejecutables generados.
 Los documentos anteriores contienen nombres y matrículas: no se incluyen en
 esta base para compartir. Las instancias se usan para la actividad académica;
 no se les atribuye una licencia nueva.
+
+## Ejecutar únicamente el algoritmo propuesto
+
+```bash
+python -m algoritmos.propuesto.ejecutar
+python -m algoritmos.propuesto.generar_reporte
+```
+
+El primer comando realiza 72 corridas con biblioteca estándar. El segundo
+regenera figuras y LaTeX a partir de resultados y requiere las dependencias
+de `requirements-figuras.txt`. No ejecuta métodos de los demás integrantes.
